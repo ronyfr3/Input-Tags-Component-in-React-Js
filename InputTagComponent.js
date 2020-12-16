@@ -22,7 +22,7 @@ const InputTagComponent = () => {
               //replace(/j value ta change hbe/global,'changed hoye ja hbe')
               //suppose we type react, then enter it will save just react comma is replaced by ''
              //value enter e click korle input field e capital hisebe add hbe
-              const val = (e.target.value).trim().replace(/,/g,'');
+              const val = (e.target.value).trim().replace(/[',','"','.',':','!','@','0','1','2','3','4','5','6','7','8','9']/g,'');
      
       //Enter holo keyboard event er option
       //sudhu matro enter btn e click ey tag add hbe 
